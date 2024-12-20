@@ -1,0 +1,28 @@
+
+# General namelist variables
+&general
+  sys_name      = "IRAK4",
+  startframe    = 14901,  # First frame of the last 1 ns
+  endframe      = 15000,  # Last frame
+  interval      = 10,      # Analyze every frame
+/
+
+
+# Generalized-Born (GB) namelist variables
+&gb
+  igb           = 5,
+  saltcon       = 0.150,
+/
+
+# Poisson-Boltzmann (PB) namelist variables
+&pb
+  istrng        = 0.15,
+  npbopt        = 0,
+/
+
+# Energy decomposition namelist variables
+&decomp
+  idecomp       = 2,
+  dec_verbose   = 3,
+  print_res     = "within 6",
+/
